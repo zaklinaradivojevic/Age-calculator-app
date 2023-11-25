@@ -5,33 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
+<div class="app-container">
+  <form id="ageCalculatorForm">
+    <div class="input-group">
+      <label for="day">Day</label>
+      <input type="number" id="day" name="day" placeholder="DD" required>
+    </div>
 
-  Day
-  DD
+    <div class="input-group">
+      <label for="month">Month</label>
+      <input type="number" id="month" name="month" placeholder="MM" required>
+    </div>
 
-  Month
-  MM
+    <div class="input-group">
+      <label for="year">Year</label>
+      <input type="number" id="year" name="year" placeholder="YYYY" required>
+    </div>
+    
+    <button type="submit" class="calculate-button">
+      <img src="https://raw.githubusercontent.com/zaklinaradivojevic/Age-calculator-app/2a991bec90a9d1eeb7af36205b65046b58469445/age-calculator-app-main/assets/images/icon-arrow.svg" alt="Arrow Icon">
+    </button>
+  </form>
+<div class="form-output">
+  <div class="column">
+    <span class="years-output">--</span><span class="years">years</span>
+  </div>
+  <div class="column">
+    <span class="months-output">--</span><span class="month">months</span>
+  </div>
+ <div class="column">
+    <span class="days-output">--</span><span class="days">days</span>
+  </div>
+  </div>
+</div>
 
-  Year
-  YYYY
 
-  -- years
-  -- months
-  -- days
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Zaklina Radivojevic</a>.
   </div>
+  <script src="script.js"></script> 
 </body>
 </html>
