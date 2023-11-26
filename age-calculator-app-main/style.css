@@ -98,31 +98,35 @@ input::placeholder {
   vertical-align: middle;
 }
 .form-output{
- background-color:transparent;
   top:40%;
-  left:170px;
+  left:7%;
   width:50%;
-  position:absolute;
+  position:relative;
    display: flex;
   flex-direction: column;
   justify-content: space-around;
  
+}
+.column{
+  display: flex;
+   white-space: nowrap;
 }
 .years-output,
 .months-output,
 .days-output {
   color: hsl(259, 100%, 65%);
   font-weight: bold;
-  font-size: 82px;
+  font-size: clamp(60px, 10vw, 82px);
 }
 .years,
 .month,
 .days {
   color: black;
   font-weight: bold;
-  font-size: 82px;
+  font-size: clamp(60px, 10vw, 82px);
   margin-left:20px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
